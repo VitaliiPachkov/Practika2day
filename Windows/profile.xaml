@@ -1,0 +1,52 @@
+﻿<Window x:Class="Pachkov_Auth.Windows.profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pachkov_Auth.Windows"
+        mc:Ignorable="d"
+        Title="TechNet Solutions"  Height="600" Width="1100" MinHeight="600" MinWidth="1100" Closing="Window_Closing"  WindowStartupLocation="CenterScreen">
+    <Grid Background="#998d7a">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+            <ColumnDefinition/>
+
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+
+
+        </Grid.RowDefinitions>
+        <Button Name="Back" Background="Transparent" Grid.Column="1" Grid.Row="6" BorderThickness="0" Click="Back_Click">
+            <Image Source="\images\back.png"/>
+        </Button>
+        <Button Click="Edit_Click" Name="Edit" Grid.Column="4" Grid.Row="6" Grid.ColumnSpan="4" Content="Изменить" FontSize="30"/>
+        <Image Source="\images\mail.png" Grid.Column="3" Grid.Row="4"/>
+        <TextBox Name="Mail" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="5" Margin="10" FontSize="30" VerticalAlignment="Center" Height="50"/>
+        <Image Source="\images\pass.png" Grid.Column="3" Grid.Row="2"/>
+        <TextBox Name="Password" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="5" Margin="10" FontSize="30" VerticalAlignment="Center" Height="50"/>
+        <TextBlock Name="UserLogin2" Text="Привет" FontSize="40" Grid.ColumnSpan="10" VerticalAlignment="Center" Grid.Row="3"/>
+    </Grid>
+</Window>

@@ -1,0 +1,66 @@
+﻿<Window x:Class="Pachkov_Auth.Windows.Registr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pachkov_Auth.Windows"
+        mc:Ignorable="d"
+        Title="TechNet Solutions"  Height="600" Width="1100" MinHeight="600" MinWidth="1100" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+        <Grid Background="#998d7a">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+                <ColumnDefinition/>
+
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBox Name="LoginColor" Background="White"  Height="50"  Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1" TextAlignment="Center" FontSize="25" />
+        <TextBox Name="MailColor" Background="White"  Height="50"  Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1" TextAlignment="Center" FontSize="25" />
+        <TextBox Name="PassColor" Background="White"  Height="50"  Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1" TextAlignment="Center" FontSize="25" />
+        <TextBox Name="PassColorRepit" Background="White"  Height="50"  Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1" TextAlignment="Center" FontSize="25" />
+
+
+
+
+        <TextBox Style="{StaticResource PlaceholderTextBox}"  Tag="Логин" Height="50" Name="LoginBox" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1" VerticalContentAlignment="Center" FontSize="25" />
+        <TextBox Style="{StaticResource PlaceholderTextBox}"  Tag="E-Mail" Height="50" Name="MailBox" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1"  FontSize="25" VerticalContentAlignment="Center" />
+        <TextBox Style="{StaticResource PlaceholderTextBox}"  Tag="Пароль" Height="50" Name="PassBox" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox Style="{StaticResource PlaceholderTextBox}"  Tag="Повторно пароль" Height="50" Name="PassBoxRepit" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="25" VerticalContentAlignment="Center"/>
+        <Image Source="\images\auth.png" Grid.Column="2" Grid.Row="1"/>
+        <Image Source="\images\mail.png" Grid.Column="2" Grid.Row="3"/>
+        <Image Source="\images\pass.png" Grid.Column="2" Grid.Row="5"/>
+        <Image Source="\images\pass.png" Grid.Column="2" Grid.Row="7"/>
+        <Button Click="RegBtn_Click" Name="RegBtn" Content="Регистрация" FontSize="25"  Grid.Column="4" Grid.ColumnSpan="3" Grid.Row="9" />
+        <Button Name="Back" Background="Transparent" Grid.Column="1" Grid.Row="9" BorderThickness="0" Click="Back_Click">
+            <Image Source="\images\back.png"/>
+        </Button>
+        <TextBlock Name="ErrorBox" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3" FontSize="15" Margin="10, 0,10,0"/>
+        <Button Click="ErrorBtn_Click" Name="ErrorBtn" Grid.Column="9" Grid.Row="3" Grid.ColumnSpan="2" Content="OK" Margin="8" FontSize="20" Visibility="Hidden" />
+    </Grid>
+</Window>
