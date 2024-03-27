@@ -37,8 +37,6 @@ namespace Pachkov_Auth.Windows
             var user = context.Users.SingleOrDefault(x => x.Id == ide);
 
             string x = Convert.ToString(ide);
-
-            UserLogin2.Text = Convert.ToString(x);
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)

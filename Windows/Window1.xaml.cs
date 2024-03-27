@@ -40,8 +40,6 @@ namespace Pachkov_Auth.Windows
 
             string Finde = user.Login;
 
-            UserLogin2.Text = Convert.ToString(id);
-
             UserLogin.Text = "Здравствуйте, " + Finde + "!";
         }
 

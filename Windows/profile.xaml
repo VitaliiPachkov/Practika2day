@@ -47,6 +47,5 @@
         <TextBox Name="Mail" Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="5" Margin="10" FontSize="30" VerticalAlignment="Center" Height="50"/>
         <Image Source="\images\pass.png" Grid.Column="3" Grid.Row="2"/>
         <TextBox Name="Password" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="5" Margin="10" FontSize="30" VerticalAlignment="Center" Height="50"/>
-        <TextBlock Name="UserLogin2" Text="Привет" FontSize="40" Grid.ColumnSpan="10" VerticalAlignment="Center" Grid.Row="3"/>
     </Grid>
 </Window>

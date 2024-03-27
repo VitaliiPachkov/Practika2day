@@ -37,7 +37,6 @@
 
         </Grid.RowDefinitions>
         <TextBlock Name="UserLogin" Text="Привет" FontSize="40" Grid.ColumnSpan="10" VerticalAlignment="Center"/>
-        <TextBlock Name="UserLogin2" Text="Привет" FontSize="40" Grid.ColumnSpan="10" VerticalAlignment="Center" Grid.Row="3"/>
         <Button Name="ProfileBtn" Click="ProfileBtn_Click" Background="Transparent" Grid.Column="13" Grid.Row="0" BorderThickness="0"  >
             <Image Source="\images\profile.png"/>
         </Button>

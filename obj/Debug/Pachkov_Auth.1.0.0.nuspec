@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Pachkov_Auth</id>
+    <version>1.0.0</version>
+    <authors>Pachkov_Auth</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="f26ad0f4ccea3d6c5092069b36e272cef6f9c0b0" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Microsoft.EntityFrameworkCore" version="7.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="7.0.12" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\laska\Desktop\prac\Practika2day\bin\Debug\net6.0-windows\Pachkov_Auth.runtimeconfig.json" target="lib\net6.0-windows7.0\Pachkov_Auth.runtimeconfig.json" />
+    <file src="C:\Users\laska\Desktop\prac\Practika2day\bin\Debug\net6.0-windows\Pachkov_Auth.dll" target="lib\net6.0-windows7.0\Pachkov_Auth.dll" />
+  </files>
+</package>

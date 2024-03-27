@@ -52,6 +52,13 @@ namespace Pachkov_Auth
 
         private async void Voiti_Click(object sender, RoutedEventArgs e)
         {
+
+            if (PassBox1.Visibility == Visibility.Visible)
+            {
+                PassBox.Password = PassBox1.Text;
+            }
+
+
             var login = LoginBox.Text;
             var pass = PassBox.Password;
 
@@ -81,6 +88,9 @@ namespace Pachkov_Auth
 
                     PassBox1.BorderThickness = new Thickness(3);
                     PassBox1.BorderBrush = Brushes.Red;
+
+                    Hidded.BorderThickness = new Thickness(3);
+                    Hidded.BorderBrush = Brushes.Red;
 
                     ErrorBtn.Visibility = Visibility.Visible;
 
@@ -171,6 +181,7 @@ namespace Pachkov_Auth
             logBox.BorderBrush = Brushes.Transparent;
             PassBox.BorderBrush = Brushes.Transparent;
             PassBox1.BorderBrush = Brushes.Transparent;
+            Hidded.BorderBrush = Brushes.Transparent;
 
             LoginBox.IsEnabled = true;
             PassBox.IsEnabled = true;
